@@ -12,7 +12,9 @@ func main() {
 	bow := surf.NewBrowser()
 	// err := bow.Open("https://digitalmint.io") // works fine
 	err := bow.Open("https://digitalmint.exchange") // returns x509UnknownAuthorityError
+	fmt.Println(err)
 	if err != nil {
+
 		panic(err)
 	}
 
